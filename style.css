@@ -752,7 +752,8 @@ button {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: var(--space-12);
-    padding: var(--space-20) 0 var(--space-12);
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-12);
 }
 
 .footer__brand .navbar__logo {
@@ -995,7 +996,8 @@ button {
     .footer__inner {
         grid-template-columns: 1fr;
         gap: var(--space-8);
-        padding: var(--space-12) 0 var(--space-8);
+        padding-top: var(--space-12);
+        padding-bottom: var(--space-8);
     }
 
     .footer__brand {
