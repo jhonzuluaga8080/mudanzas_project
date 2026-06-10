@@ -4,134 +4,250 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#C0392B" />
 
-    <!-- SEO Meta Tags -->
-    <title>Trasteos y Mudanzas Alfred | Servicio Económico y Seguro en Cali</title>
+    <title>Trasteos y Mudanzas Alfred | Empresa Profesional en Cali</title>
     <meta name="description"
-        content="Trasteos y mudanzas económicas y seguras en Cali. Camión de 2 toneladas con servicio de carga, descarga y embalaje. Viajes locales y nacionales. Llama o escríbenos al WhatsApp." />
-    <meta name="keywords"
-        content="trasteos cali, mudanzas cali, trasteos economicos cali, empresa de mudanzas cali, trasteos baratos cali, mudanzas economicas" />
+        content="Empresa de trasteos y mudanzas en Cali con más de 7 años de experiencia. Camión de carga pesada, servicio de carga y descarga, embalaje opcional. Viajes locales y nacionales. Cotiza por WhatsApp." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://mudanzaalfred.com/" />
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Trasteos y Mudanzas Alfred | Cali" />
+    <meta property="og:title" content="Trasteos y Mudanzas Alfred | Cali, Colombia" />
     <meta property="og:description"
-        content="Mudanzas económicas y seguras en Cali. Camión de 2 toneladas, carga, descarga y embalaje." />
+        content="Mudanzas profesionales en Cali y a todo Colombia. Puntualidad, cuidado de tus pertenencias y cotización sin compromiso." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/images/camion-01.jpg" />
+    <meta property="og:url" content="https://mudanzaalfred.com/" />
+    <meta property="og:image" content="https://mudanzaalfred.com/assets/images/logotipoAlfred.png" />
+    <meta property="og:locale" content="es_CO" />
 
-    <!-- Google Fonts -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Trasteos y Mudanzas Alfred | Cali" />
+    <meta name="twitter:description"
+        content="Mudanzas profesionales en Cali. Más de 7 años de experiencia. Cotiza gratis por WhatsApp." />
+    <meta name="twitter:image" content="https://mudanzaalfred.com/assets/images/logotipoAlfred.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
+    <link rel="preload" as="image" href="assets/images/camion-01.jpg" fetchpriority="high" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logotipoAlfred.png" />
+    <link rel="apple-touch-icon" href="assets/images/logotipoAlfred.png" />
+    <link rel="manifest" href="site.webmanifest" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-
-    <!-- Schema.org JSON-LD: LocalBusiness -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MovingCompany",
-    "name": "Trasteos y Mudanzas Alfred",
-    "telephone": "+573188980157",
-    "url": "https://mudanzaalfred.com",
-    "image": "assets/images/camion-01.jpg",
-    "description": "Servicio profesional de trasteos y mudanzas en Cali. Camión de 2 toneladas, carga, descarga y embalaje. Viajes locales y nacionales.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Cali",
-      "addressRegion": "Valle del Cauca",
-      "addressCountry": "CO"
-    },
-    "areaServed": ["Cali", "Valle del Cauca", "Colombia"],
-    "sameAs": "https://g.page/r/Cfny5Yk_kuDVEAE/review",
-    "openingHours": "Mo-Sa 07:00-19:00",
-    "priceRange": "$$",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+573188980157",
-      "contactType": "customer service",
-      "availableLanguage": "Spanish"
-    }
+    "@graph": [
+      {
+        "@type": "MovingCompany",
+        "@id": "https://mudanzaalfred.com/#business",
+        "name": "Trasteos y Mudanzas Alfred",
+        "telephone": "+573188980157",
+        "url": "https://mudanzaalfred.com",
+        "image": "https://mudanzaalfred.com/assets/images/logotipoAlfred.png",
+        "description": "Empresa profesional de trasteos y mudanzas en Cali con más de 7 años de experiencia. Camión de carga pesada, servicio de carga y descarga, embalaje opcional. Viajes locales y nacionales.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cali",
+          "addressRegion": "Valle del Cauca",
+          "addressCountry": "CO"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Cali" },
+          { "@type": "State", "name": "Valle del Cauca" },
+          { "@type": "Country", "name": "Colombia" }
+        ],
+        "sameAs": [
+          "https://g.page/r/Cfny5Yk_kuDVEAE/review",
+          "https://www.instagram.com/alfred_acarreos"
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "07:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "07:00",
+            "closes": "12:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "2",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+573188980157",
+          "contactType": "customer service",
+          "availableLanguage": "Spanish",
+          "areaServed": "CO"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://mudanzaalfred.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Necesito reservar con anticipación para mi mudanza en Cali?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No es obligatorio reservar, pero puedes agendar tu viaje con anticipación para asegurar la fecha y hora que prefieras."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué debo preparar antes del trasteo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lo ideal es tener todas tus pertenencias listas y empacadas antes de que llegue el camión."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Incluyen material de embalaje?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El embalaje es un servicio adicional opcional. Puedes solicitarlo al cotizar y tiene un costo adicional."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Trabajan fines de semana y feriados?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. De lunes a sábado atendemos de 7:00 a.m. a 8:00 p.m. Los domingos y feriados, hasta el mediodía."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hacen mudanzas fuera de Cali?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, realizamos viajes a cualquier parte de Colombia. Frecuentemente viajamos a Risaralda, Quindío y otras regiones."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo se cobra el servicio de mudanza?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El cobro es por viaje completo, no por hora. La cotización depende del origen, destino y volumen de carga."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo viajar en el camión con mis pertenencias?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. El servicio únicamente transporta tus pertenencias; no incluye transporte de pasajeros."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Ofrecen ayudantes de carga y descarga?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, contamos con 2 ayudantes como servicio adicional. Puedes contratar el viaje con o sin ayudantes según prefieras cargar tú mismo."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-24WE4B4ZJV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-24WE4B4ZJV');
+    </script>
 </head>
 
 <body>
 
-    <!-- ================================================ -->
-    <!-- NAVBAR                                           -->
-    <!-- ================================================ -->
+    <a href="#inicio" class="skip-link">Saltar al contenido</a>
+
     <header id="navbar" class="navbar">
         <div class="container navbar__inner">
-            <a href="#inicio" class="navbar__logo">
-                <img src="favicon.ico" alt="Logo Alfred Mudanzas" class="navbar__logo-img" />
+            <a href="#inicio" class="navbar__logo" aria-label="Trasteos y Mudanzas Alfred - Inicio">
+                <img src="assets/images/logotipoAlfred.png" alt="Logo Trasteos y Mudanzas Alfred"
+                    class="navbar__logo-img" width="48" height="32" />
                 <span class="navbar__logo-text">Alfred <span>Mudanzas</span></span>
             </a>
 
-            <nav>
+            <nav aria-label="Navegación principal">
                 <ul class="navbar__links" id="navLinks">
                     <li><a href="#ventajas" class="nav-link">Ventajas</a></li>
                     <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#proceso" class="nav-link">Proceso</a></li>
                     <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </nav>
 
-            <a href="tel:+573188980157" class="btn btn--call navbar__cta" id="navCta">
+            <a href="tel:+573188980157" class="btn btn--call navbar__cta track-phone" data-track="navbar">
                 <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                    width="18" height="18">
+                    width="18" height="18" aria-hidden="true">
                     <path
                         d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
                 </svg>
                 Llamar Ahora
             </a>
 
-            <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+            <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
     <main>
-        <!-- ================================================ -->
-        <!-- HERO                                             -->
-        <!-- ================================================ -->
         <section id="inicio" class="hero">
             <div class="hero__bg">
-                <img src="assets/images/camion-01.jpg" alt="Camión de Trasteos y Mudanzas Alfred en Cali"
-                    class="hero__bg-img" />
-                <div class="hero__overlay"></div>
+                <img src="assets/images/camion-01.jpg" alt="Camión de carga de Trasteos y Mudanzas Alfred en Cali"
+                    class="hero__bg-img" width="1920" height="1080" fetchpriority="high" decoding="async" />
+                <div class="hero__overlay" aria-hidden="true"></div>
             </div>
             <div class="container hero__content">
                 <div class="hero__text" data-reveal="fade-up">
                     <span class="hero__badge">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
                             <path
                                 d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                         </svg>
-                        Servicio de confianza en Cali
+                        +7 años de experiencia en Cali
                     </span>
-                    <h1 class="hero__title">Trasteos y Mudanzas <span class="text-accent">Económicas y Seguras</span> en
-                        Cali</h1>
-                    <p class="hero__subtitle">Tu mudanza sin estrés. Camión de 2 toneladas con servicio de carga y
-                        descarga. Realizamos viajes locales y a todo el país.</p>
+                    <h1 class="hero__title">Trasteos y Mudanzas <span class="text-accent">Profesionales</span> en Cali
+                    </h1>
+                    <p class="hero__subtitle">Tu mudanza sin estrés. Contamos con camión de carga pesada, servicio
+                        profesional de carga y descarga, y viajes a cualquier barrio de Cali o ciudad de Colombia.
+                        Trabajo 100% garantizado.</p>
                     <div class="hero__actions">
                         <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20un%20trasteo"
-                            class="btn btn--primary btn--lg" target="_blank" rel="noopener">
-                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                            class="btn btn--primary btn--lg track-whatsapp" data-track="hero" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"
+                                aria-hidden="true">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                             </svg>
                             Cotizar por WhatsApp
                         </a>
-                        <a href="tel:+573188980157" class="btn btn--outline btn--lg">
+                        <a href="tel:+573188980157" class="btn btn--outline btn--lg track-phone" data-track="hero">
                             <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2.5" width="20" height="20">
+                                stroke-width="2.5" width="20" height="20" aria-hidden="true">
                                 <path
                                     d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
                             </svg>
@@ -139,140 +255,322 @@
                         </a>
                     </div>
                     <div class="hero__stats">
-                        <div class="hero__stat"><span class="hero__stat-number">2 Ton</span><span
-                                class="hero__stat-label">Capacidad</span></div>
-                        <div class="hero__stat-divider"></div>
-                        <div class="hero__stat"><span class="hero__stat-number">Local</span><span
-                                class="hero__stat-label">y Nacional</span></div>
-                        <div class="hero__stat-divider"></div>
-                        <div class="hero__stat"><span class="hero__stat-number">100%</span><span
-                                class="hero__stat-label">Comprometidos</span></div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">+7</span>
+                            <span class="hero__stat-label">Años en Cali</span>
+                        </div>
+                        <div class="hero__stat-divider" aria-hidden="true"></div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">5.0</span>
+                            <span class="hero__stat-label">En Google</span>
+                        </div>
+                        <div class="hero__stat-divider" aria-hidden="true"></div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">100%</span>
+                            <span class="hero__stat-label">Garantizado</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#ventajas" class="hero__scroll-btn" aria-label="Ver más">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24">
+            <a href="#ventajas" class="hero__scroll-btn" aria-label="Ver más contenido">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"
+                    aria-hidden="true">
                     <polyline points="6 9 12 15 18 9" />
                 </svg>
             </a>
         </section>
 
-        <!-- ================================================ -->
-        <!-- VENTAJAS                                         -->
-        <!-- ================================================ -->
+        <section class="section seo-intro">
+            <div class="container">
+                <div class="seo-intro__content" data-reveal="fade-up">
+                    <h2 class="seo-intro__title">Empresa de mudanzas en Cali con servicio profesional y puntual</h2>
+                    <p>En <strong>Trasteos y Mudanzas Alfred</strong> llevamos más de siete años ayudando a familias y
+                        empresas en Cali y en todo Colombia. Operamos desde una zona céntrica de la ciudad y nos
+                        desplazamos a cualquier barrio o comuna para recoger tu carga, sin importar la ubicación.</p>
+                    <p>Nuestro camión está preparado para <strong>mudanzas medianas y grandes</strong>: apartamentos,
+                        casas, oficinas y más. Ofrecemos transporte de carga pesada con máximo cuidado de tus
+                        pertenencias, protección adicional para artículos delicados como televisores, espejos y vidrios,
+                        y la opción de contratar ayudantes profesionales para carga y descarga.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="ventajas" class="section ventajas">
             <div class="container">
                 <div class="section__header" data-reveal="fade-up">
                     <span class="section__tag">¿Por qué elegirnos?</span>
-                    <h2 class="section__title">Trabajamos con <span class="text-accent">compromiso</span> y <span
-                            class="text-accent">cuidado</span></h2>
+                    <h2 class="section__title">Compromiso, puntualidad y <span class="text-accent">cuidado</span> en
+                        cada mudanza</h2>
                 </div>
                 <div class="ventajas__grid">
                     <article class="ventaja-card" data-reveal="fade-up">
-                        <div class="ventaja-card__icon">💰</div>
-                        <h3 class="ventaja-card__title">Precios Justos</h3>
-                        <p class="ventaja-card__desc">Cotización sin compromiso y tarifas honestas. Sin cobros ocultos
-                            ni sorpresas al final.</p>
+                        <div class="ventaja-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32"
+                                height="32">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <h3 class="ventaja-card__title">Puntualidad Garantizada</h3>
+                        <p class="ventaja-card__desc">Llegamos siempre a la hora pactada. Valoramos tu tiempo y nos
+                            comprometemos con el horario acordado en cada trasteo.</p>
                     </article>
                     <article class="ventaja-card" data-reveal="fade-up">
-                        <div class="ventaja-card__icon">🛡️</div>
-                        <h3 class="ventaja-card__title">Cuidado Extremo</h3>
-                        <p class="ventaja-card__desc">Cada objeto es tratado con el máximo cuidado. Embalamos lo frágil
-                            y aseguramos la carga para protegerla.</p>
+                        <div class="ventaja-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32"
+                                height="32">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="ventaja-card__title">Carga y Descarga Profesional</h3>
+                        <p class="ventaja-card__desc">Nuestro equipo maneja tus pertenencias con profesionalismo. Puedes
+                            contratar ayudantes adicionales o realizar la carga tú mismo.</p>
                     </article>
                     <article class="ventaja-card" data-reveal="fade-up">
-                        <div class="ventaja-card__icon">⏰</div>
-                        <h3 class="ventaja-card__title">Puntualidad Total</h3>
-                        <p class="ventaja-card__desc">Llegamos a la hora pactada. Valoramos tu tiempo y nos
-                            comprometemos con el horario acordado.</p>
+                        <div class="ventaja-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32"
+                                height="32">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                            </svg>
+                        </div>
+                        <h3 class="ventaja-card__title">Protección para Artículos Delicados</h3>
+                        <p class="ventaja-card__desc">Protección adicional para televisores, espejos, vidrios y objetos
+                            frágiles. Cada pieza viaja segura hasta su destino.</p>
                     </article>
                     <article class="ventaja-card" data-reveal="fade-up">
-                        <div class="ventaja-card__icon">📞</div>
-                        <h3 class="ventaja-card__title">Siempre Disponibles</h3>
-                        <p class="ventaja-card__desc">Respondemos rápido por WhatsApp o llamada. Estamos disponibles
-                            para resolver todas tus dudas.</p>
+                        <div class="ventaja-card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32"
+                                height="32">
+                                <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <h3 class="ventaja-card__title">Trabajo 100% Garantizado</h3>
+                        <p class="ventaja-card__desc">Cotización sin compromiso, tarifas claras por viaje completo y
+                            compromiso total con la calidad de nuestro servicio.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ================================================ -->
-        <!-- SERVICIOS                                        -->
-        <!-- ================================================ -->
+        <section id="zonas" class="section zonas">
+            <div class="container">
+                <div class="section__header" data-reveal="fade-up">
+                    <span class="section__tag">Cobertura</span>
+                    <h2 class="section__title">Trasteos en <span class="text-accent">cualquier barrio</span> de Cali
+                    </h2>
+                    <p class="section__subtitle">Llegamos a toda la ciudad: norte, sur, oriente, occidente y centro.
+                        También realizamos mudanzas nacionales a Risaralda, Quindío y el resto del país.</p>
+                </div>
+                <div class="zonas__tags" data-reveal="fade-up">
+                    <span class="zonas__tag">Granada</span>
+                    <span class="zonas__tag">Ciudad Jardín</span>
+                    <span class="zonas__tag">Pance</span>
+                    <span class="zonas__tag">Meléndez</span>
+                    <span class="zonas__tag">San Fernando</span>
+                    <span class="zonas__tag">Versalles</span>
+                    <span class="zonas__tag">El Ingenio</span>
+                    <span class="zonas__tag">Tequendama</span>
+                    <span class="zonas__tag">La Flora</span>
+                    <span class="zonas__tag">Todo Cali</span>
+                </div>
+            </div>
+        </section>
+
         <section id="servicios" class="section servicios">
             <div class="container">
                 <div class="section__header" data-reveal="fade-up">
                     <span class="section__tag">Lo que hacemos</span>
-                    <h2 class="section__title">Nuestros <span class="text-accent">Servicios</span></h2>
-                    <p class="section__subtitle">Ofrecemos soluciones completas para que tu mudanza sea fácil, rápida y
-                        sin estrés.</p>
+                    <h2 class="section__title">Nuestros <span class="text-accent">Servicios</span> de Mudanza</h2>
+                    <p class="section__subtitle">Soluciones para mudanzas medianas y grandes: locales en Cali, viajes
+                        nacionales y servicios adicionales de embalaje y ayudantes.</p>
                 </div>
                 <div class="servicios__grid">
                     <article class="servicio-card" data-reveal="fade-up">
                         <div class="servicio-card__img-wrap">
                             <img src="assets/images/camion-01.jpg"
-                                alt="Trasteos y mudanzas locales en Cali con camión de 2 toneladas"
-                                class="servicio-card__img" loading="lazy" />
+                                alt="Mudanzas locales en Cali con camión de carga pesada"
+                                class="servicio-card__img" width="600" height="400" loading="lazy" decoding="async" />
                         </div>
                         <div class="servicio-card__body">
-                            <div class="servicio-card__icon">🏙️</div>
                             <h3 class="servicio-card__title">Mudanzas Locales en Cali</h3>
-                            <p class="servicio-card__desc">Nos encargamos de tu trasteo en cualquier barrio o comuna de
-                                Cali. Eficientes, rápidos y sin complicaciones dentro de la ciudad.</p>
+                            <p class="servicio-card__desc">Trasteos en cualquier barrio o comuna de Cali. Ideal para
+                                apartamentos, casas y oficinas. Camión de carga pesada para volúmenes medianos y
+                                grandes.</p>
                             <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20un%20trasteo%20local%20en%20Cali"
-                                class="btn btn--primary" target="_blank" rel="noopener">Cotizar</a>
-                        </div>
-                    </article>
-                    <article class="servicio-card" data-reveal="fade-up">
-                        <div class="servicio-card__img-wrap">
-                            <img src="assets/images/camion-01.jpg"
-                                alt="Mudanzas nacionales desde Cali a cualquier ciudad de Colombia"
-                                class="servicio-card__img" loading="lazy" />
-                        </div>
-                        <div class="servicio-card__body">
-                            <div class="servicio-card__icon">🗺️</div>
-                            <h3 class="servicio-card__title">Mudanzas Nacionales</h3>
-                            <p class="servicio-card__desc">¿Te mudas fuera de Cali? Realizamos viajes a cualquier ciudad
-                                del país. Tu mercancía llega segura a su destino.</p>
-                            <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20una%20mudanza%20nacional"
-                                class="btn btn--primary" target="_blank" rel="noopener">Cotizar</a>
+                                class="btn btn--primary track-whatsapp" data-track="servicio-local" target="_blank"
+                                rel="noopener noreferrer">Cotizar</a>
                         </div>
                     </article>
                     <article class="servicio-card" data-reveal="fade-up">
                         <div class="servicio-card__img-wrap">
                             <img src="assets/images/camion-02.jpeg"
-                                alt="Servicio integral de empaque, carga y descarga para mudanzas"
-                                class="servicio-card__img" loading="lazy" />
+                                alt="Mudanzas nacionales desde Cali a Risaralda, Quindío y todo Colombia"
+                                class="servicio-card__img" width="600" height="400" loading="lazy" decoding="async" />
                         </div>
                         <div class="servicio-card__body">
-                            <div class="servicio-card__icon">📦</div>
+                            <h3 class="servicio-card__title">Mudanzas Nacionales</h3>
+                            <p class="servicio-card__desc">¿Te mudas fuera de Cali? Viajamos a cualquier ciudad de
+                                Colombia. Frecuentemente realizamos rutas a Risaralda, Quindío y otras regiones del
+                                país.</p>
+                            <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20una%20mudanza%20nacional"
+                                class="btn btn--primary track-whatsapp" data-track="servicio-nacional" target="_blank"
+                                rel="noopener noreferrer">Cotizar</a>
+                        </div>
+                    </article>
+                    <article class="servicio-card" data-reveal="fade-up">
+                        <div class="servicio-card__img-wrap">
+                            <img src="assets/images/camion-01.jpg"
+                                alt="Servicio de empaque, carga y descarga para mudanzas en Cali"
+                                class="servicio-card__img" width="600" height="400" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="servicio-card__body">
                             <h3 class="servicio-card__title">Empaque, Carga y Descarga</h3>
-                            <p class="servicio-card__desc">Servicio integral de lujo donde nos encargamos de todo:
-                                embalamos con
-                                materiales de protección, cargamos y descargamos en el nuevo lugar.</p>
+                            <p class="servicio-card__desc">Servicio adicional de embalaje con materiales de protección,
+                                más carga y descarga profesional. Incluye cuidado especial para artículos delicados.</p>
                             <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20el%20servicio%20de%20empaque%20y%20carga"
-                                class="btn btn--primary" target="_blank" rel="noopener">Cotizar</a>
+                                class="btn btn--primary track-whatsapp" data-track="servicio-empaque" target="_blank"
+                                rel="noopener noreferrer">Cotizar</a>
+                        </div>
+                    </article>
+                    <article class="servicio-card" data-reveal="fade-up">
+                        <div class="servicio-card__img-wrap">
+                            <img src="assets/images/camion-02.jpeg"
+                                alt="Ayudantes profesionales para carga y descarga en mudanzas"
+                                class="servicio-card__img" width="600" height="400" loading="lazy" decoding="async" />
+                        </div>
+                        <div class="servicio-card__body">
+                            <h3 class="servicio-card__title">Ayudantes de Carga (Opcional)</h3>
+                            <p class="servicio-card__desc">Contrata el servicio con o sin ayudantes. Disponemos de 2
+                                colaboradores profesionales para cargar y descargar tus pertenencias con el máximo
+                                cuidado.</p>
+                            <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20con%20ayudantes%20de%20carga"
+                                class="btn btn--primary track-whatsapp" data-track="servicio-ayudantes" target="_blank"
+                                rel="noopener noreferrer">Cotizar</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ================================================ -->
-        <!-- OPINIONES / TESTIMONIOS                          -->
-        <!-- ================================================ -->
+        <section id="proceso" class="section proceso">
+            <div class="container">
+                <div class="section__header" data-reveal="fade-up">
+                    <span class="section__tag">Cómo trabajamos</span>
+                    <h2 class="section__title">Tu mudanza en <span class="text-accent">5 pasos</span></h2>
+                </div>
+                <ol class="proceso__steps">
+                    <li class="proceso__step" data-reveal="fade-up">
+                        <span class="proceso__number">01</span>
+                        <h3 class="proceso__title">Cotiza por WhatsApp o llamada</h3>
+                        <p class="proceso__desc">Cuéntanos origen, destino y qué vas a transportar. Te damos una
+                            cotización clara por viaje completo, sin compromiso.</p>
+                    </li>
+                    <li class="proceso__step" data-reveal="fade-up">
+                        <span class="proceso__number">02</span>
+                        <h3 class="proceso__title">Agenda tu fecha (opcional)</h3>
+                        <p class="proceso__desc">No necesitas reservar con anticipación, pero puedes agendar tu viaje
+                            para asegurar el día y la hora que prefieras.</p>
+                    </li>
+                    <li class="proceso__step" data-reveal="fade-up">
+                        <span class="proceso__number">03</span>
+                        <h3 class="proceso__title">Prepara tus pertenencias</h3>
+                        <p class="proceso__desc">Ten todo listo y empacado. Si contratas embalaje, nos encargamos de
+                            proteger tus objetos, especialmente los delicados.</p>
+                    </li>
+                    <li class="proceso__step" data-reveal="fade-up">
+                        <span class="proceso__number">04</span>
+                        <h3 class="proceso__title">Carga puntual y cuidadosa</h3>
+                        <p class="proceso__desc">Llegamos a la hora pactada. Cargamos con cuidado y aseguramos todo
+                            para el trayecto, llueva o haga sol.</p>
+                    </li>
+                    <li class="proceso__step" data-reveal="fade-up">
+                        <span class="proceso__number">05</span>
+                        <h3 class="proceso__title">Entrega en destino</h3>
+                        <p class="proceso__desc">Descargamos en tu nuevo hogar u oficina. Verificamos que todo llegue
+                            en orden. Trabajo 100% garantizado.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="galeria" class="section galeria">
+            <div class="container">
+                <div class="section__header" data-reveal="fade-up">
+                    <span class="section__tag">Galería</span>
+                    <h2 class="section__title">Nuestro <span class="text-accent">trabajo</span> en imágenes</h2>
+                    <p class="section__subtitle">Próximamente más fotos de nuestros trasteos. Mientras tanto, conoce
+                        nuestro camión y equipo.</p>
+                </div>
+                <div class="galeria__grid">
+                    <figure class="galeria__item" data-reveal="fade-up">
+                        <img src="assets/images/logotipoAlfred.png"
+                            alt="Camión de Trasteos y Mudanzas Alfred - empresa de mudanzas en Cali" width="600"
+                            height="400" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="galeria__item" data-reveal="fade-up">
+                        <img src="assets/images/camion-01.jpg" alt="Camión de carga pesada para mudanzas en Cali"
+                            width="600" height="400" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="galeria__item" data-reveal="fade-up">
+                        <img src="assets/images/camion-02.jpeg" alt="Servicio de mudanzas y trasteos en Cali"
+                            width="600" height="400" loading="lazy" decoding="async" />
+                    </figure>
+                    <figure class="galeria__item galeria__item--placeholder" data-reveal="fade-up">
+                        <div class="galeria__placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40"
+                                height="40" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <circle cx="8.5" cy="8.5" r="1.5" />
+                                <polyline points="21 15 16 10 5 21" />
+                            </svg>
+                            <span>Próximamente: fotos del equipo trabajando</span>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
         <section id="opiniones" class="section opiniones">
             <div class="container">
                 <div class="section__header" data-reveal="fade-up">
                     <span class="section__tag">Reseñas</span>
                     <h2 class="section__title">Lo que dicen nuestros <span class="text-accent">clientes</span></h2>
-                    <p class="section__subtitle">¿Ya usaste nuestro servicio? Cuéntale tu experiencia a otras familias y
-                        ayúdanos a crecer.</p>
+                    <p class="section__subtitle">
+                        <span class="opiniones__rating" aria-label="Calificación 5 de 5 estrellas en Google">★★★★★</span>
+                        5.0 en Google · 2 reseñas verificadas
+                    </p>
                 </div>
 
-                <!-- Google Business CTA -->
+                <div class="opiniones__grid">
+                    <article class="opinion-card" data-reveal="fade-up">
+                        <div class="opinion-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                        <blockquote class="opinion-card__text">"Súper el servicio. Muy cumplidos."</blockquote>
+                        <footer class="opinion-card__footer">
+                            <div class="opinion-card__avatar" aria-hidden="true">NH</div>
+                            <div class="opinion-card__author-info">
+                                <cite class="opinion-card__name">Nelcy Hoyos</cite>
+                                <span class="opinion-card__date">Reseña en Google · hace 10 semanas</span>
+                            </div>
+                        </footer>
+                    </article>
+                    <article class="opinion-card" data-reveal="fade-up">
+                        <div class="opinion-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+                        <blockquote class="opinion-card__text">Cliente satisfecho — calificación de 5 estrellas en
+                            Google.</blockquote>
+                        <footer class="opinion-card__footer">
+                            <div class="opinion-card__avatar" aria-hidden="true">SV</div>
+                            <div class="opinion-card__author-info">
+                                <cite class="opinion-card__name">Steven Valencia</cite>
+                                <span class="opinion-card__date">Reseña en Google · hace 13 semanas</span>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+
                 <div class="opiniones__google-cta" data-reveal="fade-up">
-                    <svg viewBox="0 0 48 48" width="28" height="28">
+                    <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true">
                         <path fill="#FFC107"
                             d="M43.6 20.1H42V20H24v8h11.3C33.7 32.1 29.3 35 24 35c-6.1 0-11-4.9-11-11s4.9-11 11-11c2.8 0 5.4 1.1 7.4 2.8l5.7-5.7C33.9 7.2 29.2 5 24 5 12.9 5 4 13.9 4 25s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z" />
                         <path fill="#FF3D00"
@@ -284,25 +582,94 @@
                     </svg>
                     <p>¿Ya eres nuestro cliente? <strong>Déjanos tu reseña en Google</strong> y ayuda a más familias a
                         encontrarnos.</p>
-                    <a href="https://g.page/r/Cfny5Yk_kuDVEAE/review" class="btn btn--google" target="_blank"
-                        rel="noopener">Dejar reseña en Google</a>
+                    <a href="https://g.page/r/Cfny5Yk_kuDVEAE/review" class="btn btn--google track-review"
+                        data-track="google-review" target="_blank" rel="noopener noreferrer">Dejar reseña en Google</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section faq">
+            <div class="container">
+                <div class="section__header" data-reveal="fade-up">
+                    <span class="section__tag">Preguntas frecuentes</span>
+                    <h2 class="section__title">Resolvemos tus <span class="text-accent">dudas</span></h2>
+                    <p class="section__subtitle">Todo lo que necesitas saber antes de contratar tu trasteo o mudanza en
+                        Cali.</p>
+                </div>
+                <div class="faq__list" data-reveal="fade-up">
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Necesito reservar con anticipación?</summary>
+                        <p class="faq__answer">No es obligatorio, pero puedes agendar tu viaje desde antes para que
+                            quede confirmado en la fecha y hora que prefieras.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Qué debo preparar antes del trasteo?</summary>
+                        <p class="faq__answer">Ten todas tus pertenencias listas y empacadas antes de que llegue el
+                            camión. Así el proceso es más rápido y eficiente.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Incluyen cajas y material de embalaje?</summary>
+                        <p class="faq__answer">El embalaje es un servicio adicional opcional. Puedes solicitarlo al
+                            cotizar; tiene un costo adicional según el volumen y tipo de objetos.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Trabajan fines de semana y feriados?</summary>
+                        <p class="faq__answer">Sí. De lunes a sábado atendemos de 7:00 a.m. a 8:00 p.m. Los domingos y
+                            feriados, hasta el mediodía.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Hacen mudanzas fuera de Cali?</summary>
+                        <p class="faq__answer">Sí, viajamos a cualquier parte de Colombia. Frecuentemente realizamos
+                            rutas a Risaralda, Quindío y otras ciudades del país.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Qué pasa si llueve el día de la mudanza?</summary>
+                        <p class="faq__answer">El viaje continúa con normalidad. Protegemos la carga para que tus
+                            pertenencias no se vean afectadas por el clima.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Puedo viajar en el camión?</summary>
+                        <p class="faq__answer">No. El servicio únicamente transporta tus pertenencias; no incluye
+                            transporte de pasajeros.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Cómo se cobra el servicio?</summary>
+                        <p class="faq__answer">Se cobra por viaje completo, no por hora. El valor depende del origen,
+                            destino y volumen de carga. Cotiza sin compromiso por WhatsApp.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Hay algo que no transporten?</summary>
+                        <p class="faq__answer">Transportamos todo tipo de pertenencias para mudanzas de hogar y oficina.
+                            Si tienes algún artículo especial, consúltanos al cotizar.</p>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Puedo contratar ayudantes de carga?</summary>
+                        <p class="faq__answer">Sí. Disponemos de 2 ayudantes como servicio adicional. Puedes pedir el
+                            viaje con o sin ayudantes, según prefieras cargar tú mismo o no.</p>
+                    </details>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ================================================ -->
-    <!-- FOOTER                                           -->
-    <!-- ================================================ -->
     <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__brand">
-                <a href="#inicio" class="navbar__logo">
-                    <img src="favicon.ico" alt="Logo Alfred Mudanzas" class="navbar__logo-img" />
+                <a href="#inicio" class="navbar__logo" aria-label="Ir al inicio">
+                    <img src="assets/images/logotipoAlfred.png" alt="" class="navbar__logo-img" width="48"
+                        height="32" />
                     <span class="navbar__logo-text">Alfred <span>Mudanzas</span></span>
                 </a>
-                <p class="footer__desc">Trasteos y mudanzas económicas y seguras en Cali y a todo el país. Tu confianza
-                    es nuestro mayor compromiso.</p>
+                <p class="footer__desc">Trasteos y mudanzas profesionales en Cali y a todo Colombia. Más de 7 años de
+                    experiencia. Tu confianza es nuestro mayor compromiso.</p>
+                <a href="https://www.instagram.com/alfred_acarreos" class="footer__social track-instagram"
+                    data-track="instagram" target="_blank" rel="noopener noreferrer" aria-label="Síguenos en Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                    @alfred_acarreos
+                </a>
             </div>
 
             <div class="footer__col">
@@ -311,7 +678,9 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#ventajas">Ventajas</a></li>
                     <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proceso">Proceso</a></li>
                     <li><a href="#opiniones">Opiniones</a></li>
+                    <li><a href="#faq">Preguntas frecuentes</a></li>
                 </ul>
             </div>
 
@@ -319,36 +688,38 @@
                 <h4 class="footer__col-title">Contacto</h4>
                 <ul class="footer__list footer__list--contact">
                     <li>
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                         </svg>
-                        <a href="https://wa.me/573188980157" target="_blank" rel="noopener">+57 318 898 0157</a>
+                        <a href="https://wa.me/573188980157" class="track-whatsapp" data-track="footer"
+                            target="_blank" rel="noopener noreferrer">+57 318 898 0157</a>
                     </li>
                     <li>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
-                            height="16">
+                            height="16" aria-hidden="true">
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                             <circle cx="12" cy="10" r="3" />
                         </svg>
-                        Cali, Valle del Cauca, Colombia
+                        Cali, Valle del Cauca · Zona céntrica
                     </li>
                     <li>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16"
-                            height="16">
+                            height="16" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" />
                             <polyline points="12 6 12 12 16 14" />
                         </svg>
-                        Lun – Sáb: 7:00 AM – 7:00 PM
+                        Lun – Sáb: 7:00 AM – 8:00 PM<br />Dom y feriados: hasta 12:00 M
                     </li>
                 </ul>
             </div>
 
             <div class="footer__col">
                 <h4 class="footer__col-title">¿Listo para mudarte?</h4>
-                <p class="footer__cta-desc">Escríbenos ahora y recibe tu cotización en minutos.</p>
+                <p class="footer__cta-desc">Escríbenos ahora y recibe tu cotización en minutos. Sin compromiso.</p>
                 <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20un%20trasteo"
-                    class="btn btn--primary" target="_blank" rel="noopener">
+                    class="btn btn--primary track-whatsapp" data-track="footer-cta" target="_blank"
+                    rel="noopener noreferrer">
                     Cotizar por WhatsApp
                 </a>
             </div>
@@ -360,12 +731,16 @@
         </div>
     </footer>
 
-    <!-- ================================================ -->
-    <!-- BOTÓN FLOTANTE WHATSAPP                          -->
-    <!-- ================================================ -->
-    <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20un%20trasteo" class="whatsapp-fab"
-        id="whatsappFab" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+    <div class="mobile-cta" id="mobileCta" aria-hidden="true">
+        <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20un%20trasteo"
+            class="btn btn--primary track-whatsapp" data-track="mobile-bar" target="_blank" rel="noopener noreferrer">
+            Cotizar gratis por WhatsApp
+        </a>
+    </div>
+
+    <a href="https://wa.me/573188980157?text=Hola%2C%20quiero%20cotizar%20un%20trasteo" class="whatsapp-fab track-whatsapp"
+        id="whatsappFab" data-track="fab" target="_blank" rel="noopener noreferrer" aria-label="Cotizar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
